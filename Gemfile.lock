@@ -15,6 +15,13 @@ GIT
       i18n (~> 0.5)
       spree (~> 1.1)
 
+GIT
+  remote: git://github.com/spree/spree_simple_dash
+  revision: 09017bd38d32bf0fc8e599b7a322557b7192ab7b
+  specs:
+    spree_simple_dash (1.0.0.beta)
+      spree_core (>= 1.0.0.beta)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -261,6 +268,7 @@ DEPENDENCIES
   spree (= 1.2.0)
   spree_auth_devise!
   spree_i18n!
+  spree_simple_dash!
   therubyracer
   turn
   uglifier

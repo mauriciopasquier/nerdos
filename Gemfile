@@ -36,6 +36,7 @@ gem 'jquery-rails'
 gem 'spree', '1.2.0'
 gem 'spree_auth_devise',  git: 'git://github.com/spree/spree_auth_devise'
 gem 'spree_i18n',         git: 'git://github.com/spree/spree_i18n'
+gem 'spree_simple_dash',  git: 'git://github.com/spree/spree_simple_dash'
 
 group :development do
   gem 'pry'

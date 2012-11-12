@@ -1,0 +1,25 @@
+es:
+  best_selling_products: "Productos que más se venden"
+  best_selling_taxons: "Categorías que más se venden"
+  by_day: "por día"
+  count: "Cantidad"
+  five_biggest_spenders: "5 más gastadores"
+  items: "Items"
+  last_14_days: "Últimos 14 días"
+  last_5_orders: "Últimas 5 órdenes"
+  last_7_days: "Últimos 7 días"
+  last_month: "Último mes"
+  last_year: "Último año"
+  ord_qty: "Cantidad de la orden"
+  ord_total: "Total de la orden"
+  orders: "Órdenes"
+  out_of_stock_products: "Productos fuera de stock"
+  overview: "General"
+  overview_welcome: "Bienvenido al pantallazo general de tu tienda. Actualmente
+no tenemos suficientes datos para mostrar las estadísticas.<br /><br /> El
+panel de estadísticas se va a mostrar automáticamente una vez que el sistema
+tenga suficientes órdenes para generarlas."
+  this_month: "Este mes"
+  this_year: "Este año"
+  top_grossing_products: "Productos más rendidores"
+  units: "Unidades"
