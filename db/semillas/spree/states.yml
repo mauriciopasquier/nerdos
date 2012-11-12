@@ -1,0 +1,121 @@
+---
+states_001: 
+  name: Salta
+  country_id: "1"
+  id: "1"
+  abbr: SA
+states_002: 
+  name: Provincia de Buenos Aires
+  country_id: "1"
+  id: "2"
+  abbr: BA
+states_003: 
+  name: Capital Federal
+  country_id: "1"
+  id: "3"
+  abbr: CABA
+states_004: 
+  name: San Luis
+  country_id: "1"
+  id: "4"
+  abbr: SL
+states_005: 
+  name: Entre Ríos
+  country_id: "1"
+  id: "5"
+  abbr: ER
+states_006: 
+  name: La Rioja
+  country_id: "1"
+  id: "6"
+  abbr: LR
+states_007: 
+  name: Santiago del Estero
+  country_id: "1"
+  id: "7"
+  abbr: SE
+states_008: 
+  name: Chaco
+  country_id: "1"
+  id: "8"
+  abbr: CHA
+states_009: 
+  name: San Juan
+  country_id: "1"
+  id: "9"
+  abbr: SJ
+states_010: 
+  name: Catamarca
+  country_id: "1"
+  id: "10"
+  abbr: CAT
+states_011: 
+  name: La Pampa
+  country_id: "1"
+  id: "11"
+  abbr: LP
+states_012: 
+  name: Mendoza
+  country_id: "1"
+  id: "12"
+  abbr: MZA
+states_013: 
+  name: Misiones
+  country_id: "1"
+  id: "13"
+  abbr: MI
+states_014: 
+  name: Formosa
+  country_id: "1"
+  id: "14"
+  abbr: FOR
+states_015: 
+  name: Neuquén
+  country_id: "1"
+  id: "15"
+  abbr: NEU
+states_016: 
+  name: Río Negro
+  country_id: "1"
+  id: "16"
+  abbr: RN
+states_017: 
+  name: Santa Fe
+  country_id: "1"
+  id: "17"
+  abbr: SFE
+states_018: 
+  name: Tucumán
+  country_id: "1"
+  id: "18"
+  abbr: TUC
+states_019: 
+  name: Chubut
+  country_id: "1"
+  id: "19"
+  abbr: CHU
+states_020: 
+  name: Tierra del Fuego
+  country_id: "1"
+  id: "20"
+  abbr: TF
+states_021: 
+  name: Corrientes
+  country_id: "1"
+  id: "21"
+  abbr: COR
+states_022: 
+  name: Córdoba
+  country_id: "1"
+  id: "22"
+  abbr: CBA
+states_023: 
+  name: Jujuy
+  country_id: "1"
+  id: "23"
+  abbr: JU
+states_024: 
+  name: Santa Cruz
+  country_id: "1"
+  id: "24"
+  abbr: SC

@@ -7,5 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Spree::Core::Engine.load_seed if defined?(Spree::Core)
+# Spree::Core::Engine.load_seed if defined?(Spree::Core)
+default_path = File.join(File.dirname(__FILE__), 'semillas')
+
+Rake::Task['db:load_dir'].reenable
+Rake::Task['db:load_dir'].invoke(default_path)
+
+Spree::Zone.find(:all).each do |zone|
+  Spree::Zone.update_counters zone.id, :zone_members_count => zone.zone_members.length
+end
+
 Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
