@@ -1,0 +1,17 @@
+es:
+  devise:
+    user_passwords:
+      user:
+        send_instructions: 'Vas a recibir un correo con instrucciones sobre cómo resetear tu contraseña en unos pocos minutos.'
+        updated: 'Tu contraseña fue cambiada. Ya iniciaste sesión.'
+    user_registrations:
+      signed_up: 'Bienvenido. Tu cuenta fue creada.'
+      inactive_signed_up: 'Te has registrado exitosamente. Sin embargo, no hemos podido loguearte porque tu cuenta todavía no ha sido activada.'
+      updated: 'Tu cuenta fue actualizada.'
+      destroyed: 'Fue grato tenerte con nosotros. Tu cuenta fue cancelada.'
+    user_sessions:
+      signed_in: 'Sesión iniciada.'
+      signed_out: 'Sesión finalizada.'
+    oauth_callbacks:
+      success: 'Has sido autorizado satisfactoriamente de la cuenta %{kind}.'
+      failure: 'No has sido autorizado en la cuenta %{kind} porque "%{reason}".'
