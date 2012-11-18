@@ -1,0 +1,30 @@
+@import 'constantes';
+
+body {
+  background-color: $gris;
+  color: $amarillo;
+
+  a {
+    color: $amarillo;
+
+    &:visited { color: darken($amarillo, 15%); }
+  }
+
+  #logo { background-color: white; }
+
+  #header {
+    h1 {
+      a { color: #8CB952; }
+    }
+
+    #progress {
+      background: image-url('nerdos/admin_tab_back.png') repeat-x scroll left top $gris;
+    }
+  }
+
+  #content {
+    &.with-sidebar {
+      padding-bottom: 2em;
+    }
+  }
+}
