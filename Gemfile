@@ -8,6 +8,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'rails-i18n'
 gem 'fugue_icons_rails'
+gem 'yaml_db'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,7 +44,6 @@ group :development do
   gem 'pry'
   gem 'pry-rails'
   gem 'hirb'
-  gem 'yaml_db'
 end
 
 group :test do
