@@ -28,6 +28,15 @@
     color: $gris;
   }
 
+
+  #breadcrumbs {
+    li {
+      a {
+        color: $amarillo;
+      }
+    }
+  }
+
   #wrapper {
     color: white;
   }

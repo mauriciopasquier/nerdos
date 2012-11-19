@@ -753,6 +753,7 @@ es:
   please_define_payment_methods: "Por favor, define un método de pago primero."
   populate_get_error: "Algo salió mal. Por favor intenta añadir el item nuevamente."
   powered_by: "Soportado por"
+  designed_by: "Diseñado y hosteado por"
   presentation: Presentación
   preview: Vista previa
   previous: Anterior
