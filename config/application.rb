@@ -74,6 +74,7 @@ module Nerdos
     config.assets.version = '1.0'
     # Agrego fonts al asset path
     config.assets.paths <<  Rails.root.join("vendor", "assets", "fonts")
-
+    # Traduzco el path
+    config.assets.prefix = "/estaticos"
   end
 end
