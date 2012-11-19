@@ -1,0 +1,13 @@
+
+---
+spree_taxonomies:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Remeras
+    - '2012-11-18 01:48:29.674763'
+    - '2012-11-18 01:48:29.674763'

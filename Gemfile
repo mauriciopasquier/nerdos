@@ -43,6 +43,7 @@ group :development do
   gem 'pry'
   gem 'pry-rails'
   gem 'hirb'
+  gem 'yaml_db'
 end
 
 group :test do
