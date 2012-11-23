@@ -18,16 +18,22 @@
     color: $amarillo;
     &:hover {
       color: darken($amarillo, 20%) !important;
-      text-decoration: underline;
     }
   }
 
   input[type="submit"], .button {
-    background-color: $amarillo;
-    border-color: darken($amarillo, 10%);
-    color: $gris;
+    @include boton-amarillo;
   }
 
+  input.gray[type="submit"], input.gray[type="button"], input.gray[type="reset"],
+  button.gray, a.button.gray {
+    @include boton-verde;
+  }
+
+  input[type="submit"], input[type="button"], input[type="reset"], button,
+  a.button {
+    @include boton-amarillo;
+  }
 
   #breadcrumbs {
     li {
@@ -97,4 +103,89 @@
     color: $gris;
   }
 
+  textarea:active, textarea:focus, input[type="date"]:active,
+  input[type="date"]:focus, input[type="datetime"]:active,
+  input[type="datetime"]:focus, input[type="datetime-local"]:active,
+  input[type="datetime-local"]:focus, input[type="email"]:active,
+  input[type="email"]:focus, input[type="month"]:active,
+  input[type="month"]:focus, input[type="number"]:active,
+  input[type="number"]:focus, input[type="password"]:active,
+  input[type="password"]:focus, input[type="search"]:active,
+  input[type="search"]:focus, input[type="tel"]:active, input[type="tel"]:focus,
+  input[type="text"]:active, input[type="text"]:focus, select:active,
+  select:focus, input[type="time"]:active, input[type="time"]:focus,
+  input[type="url"]:active, input[type="url"]:focus, input[type="week"]:active,
+  input[type="week"]:focus {
+    border-color: darken($verde, 20%);
+  }
+
+  table thead {
+    background-color: $gris-claro;
+  }
+
+  #product-images #main-image,
+  ul#products li .product-image {
+    background-color: $gris;
+    border-color: $verde;
+    &:hover {
+      border-color: $amarillo;
+    }
+  }
+
+  span.price,
+  #checkout-summary table tr[data-hook="item_total"] td:last-child strong,
+  #checkout-summary table #summary-order-total,
+  #order_details td.price span,
+  #order_details td.total span,
+  #order_summary td.price span,
+  #order_summary td.total span,
+  table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"],
+  table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"],
+  div[data-hook="inside_cart_form"] #subtotal span.order-total {
+    color: $verde;
+  }
+
+  ul#products li .price {
+    color: $verde;
+  }
+
+  p[data-hook="use_billing"] {
+    background-color: $gris-claro;
+    color: $gris;
+    margin-top: -15px;
+  }
+
+  #billing legend, #shipping legend, #shipping_method legend, #payment legend,
+  #order_details legend, #order_summary legend {
+    color: $verde;
+  }
+
+  .progress-steps li.current-first, .progress-steps li.current {
+    @include boton-amarillo;
+  }
+
+  .progress-steps li.completed-first, .progress-steps li.completed {
+    @include boton-verde;
+  }
+
+  .progress-steps li.completed-first a, .progress-steps li.completed a {
+    color: $gris;
+    &:hover {
+      color: $gris;
+    }
+  }
+
+  input[type="submit"]:hover, input[type="button"]:hover,
+  input[type="reset"]:hover, button:hover, a.button:hover {
+    color: inherit !important;
+  }
+
+  *::selection, *::-moz-selection, *::-webkit-selection {
+    background-color: $gris-claro;
+    color: $gris;
+  }
+
+  #sidebar_products_search .filter-title {
+    color: $verde;
+  }
 }

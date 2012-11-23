@@ -1,6 +1,7 @@
-$amarillo:  rgb(255,  204,    0);
-$verde:     rgb(204,  255,  102);
-$gris:      rgb( 30,   33,   36);
+$amarillo:    rgb(255,  204,    0);
+$verde:       rgb(204,  255,  102);
+$gris:        rgb( 30,   33,   36);
+$gris-claro:  #727276;
 
 @mixin corner($size) {
   -moz-border-radius: $size;
@@ -15,7 +16,24 @@ $gris:      rgb( 30,   33,   36);
      $ancho -$ancho 0 $color,
     -$ancho  $ancho 0 $color,
      $ancho  $ancho 0 $color;
-// text-outline: $ancho 0 $color;
+}
+
+@mixin boton-amarillo {
+  background-color: $amarillo;
+  border-color: darken($amarillo, 10%);
+  color: $gris;
+  &:hover {
+    color: darken($amarillo, 20%) !important;
+  }
+}
+
+@mixin boton-verde {
+  background-color: $verde;
+  border-color: darken($verde, 10%);
+  color: $gris;
+  &:hover {
+    background-color: darken($verde, 30%) !important;
+  }
 }
 
 @font-face {
