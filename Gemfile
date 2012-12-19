@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,7 +15,7 @@ gem 'yaml_db'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'therubyracer'
+  gem 'therubyracer', '~> 0.10.0' # la 0.11 no me compila
   gem 'uglifier'
 end
 
@@ -35,10 +35,10 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.2.0'
+gem 'spree', '~> 1.2.2'
 gem 'spree_auth_devise',  git: 'git://github.com/spree/spree_auth_devise'
+gem 'devise-encryptable'
 gem 'spree_i18n',         git: 'git://github.com/spree/spree_i18n'
-gem 'spree_simple_dash',  git: 'git://github.com/spree/spree_simple_dash'
 
 group :development do
   gem 'pry'
