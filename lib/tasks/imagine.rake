@@ -2,7 +2,7 @@
 
 namespace :imagine do
 
-  desc "Genera productos a partir de las imagenes de de /tmp/nerdos/imagenes o dir=directorio"
+  desc "Genera productos a partir de las imagenes de /tmp/nerdos/imagenes o dir=directorio"
   task :productos => :environment do
     dir = ENV['dir'] || "/tmp/nerdos/imagenes"
     Dir.glob "#{Rails.root.join dir}/*.png" do |i|
