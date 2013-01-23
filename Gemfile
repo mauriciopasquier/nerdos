@@ -36,9 +36,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem 'spree', '~> 1.2.2'
-gem 'spree_auth_devise',  git: 'git://github.com/spree/spree_auth_devise'
-gem 'devise-encryptable'
-gem 'spree_i18n',         git: 'git://github.com/spree/spree_i18n'
+gem 'spree_auth_devise',  github: 'spree/spree_auth_devise', branch: '1-2-stable'
+gem 'spree_i18n',         github: 'spree/spree_i18n'
+gem 'spree_static_content', github: 'spree/spree_static_content', branch: '1-2-stable'
 
 group :development do
   gem 'pry'
