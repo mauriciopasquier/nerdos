@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -35,7 +35,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '~> 1.2.2'
+gem 'spree', '1.2.3'
 gem 'spree_auth_devise',  github: 'spree/spree_auth_devise', branch: '1-2-stable'
 gem 'spree_i18n',         github: 'spree/spree_i18n'
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '1-2-stable'
