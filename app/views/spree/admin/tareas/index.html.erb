@@ -1,0 +1,17 @@
+<% content_for :page_title do %>
+   <%= 'Tareas' %>
+<% end %>
+
+<%= form_tag procesar_admin_tareas_path, remote: false %>
+  <h2>Carga masiva</h2>
+    <p>Descarga imágenes de una URL específica y las convierte en productos</p>
+    <p>
+      <%= label_tag 'URL' %>
+        <%= text_field_tag 'url', nil, placeholder: 'una URL con imágenes' %>
+      <%= label_tag 'Publicar?' %>
+        <%= check_box_tag 'atributos[publicar]', true, false %>
+      <%= label_tag 'Precio' %>
+        <%= text_field_tag 'atributos[precio]', nil, placeholder: 'una fortuna' %>
+    </p>
+    <%= submit_tag 'Carga masiva', confirm: "Probablemente demore mucho..." %>
+</form>
