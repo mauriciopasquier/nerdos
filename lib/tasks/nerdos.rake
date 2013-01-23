@@ -16,7 +16,8 @@ namespace :nerdos do
   desc "Genera productos a partir de las imagenes de tmp/imagenes o dir=directorio"
   task :producir => :environment do
     dir = ENV['dir'] || "#{Rails.root.join('tmp/imagenes')}"
-    Tareas.producir(dir)
+    pub = ENV['publicar'].present? ? true : false
+    Tareas.producir(dir, pub)
   end
 
 end
