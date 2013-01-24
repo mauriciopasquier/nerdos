@@ -9,14 +9,22 @@ module Tareas
   def self.producir(dir, atributos = {})
     Dir.glob "#{dir}/*.png" do |i|
       nombre = File.basename(i, File.extname(i))
+
+      if atributos[:borrar]
+        Spree::Product.find_by_name(nombre).destroy
+      end
+
       p = Spree::Product.find_or_create_by_name(nombre) do |p|
         p.price = atributos[:precio] || 80
       end
+
       p.images.build(attachment: File.open(i))
       p.sku = nombre
+
       if atributos[:publicar]
         p.available_on = Date.today
       end
+
       p.save
     end
   end
