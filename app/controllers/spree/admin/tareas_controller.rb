@@ -15,7 +15,11 @@ class Spree::Admin::TareasController < Spree::Admin::BaseController
 
     def bulk
       dir = Rails.root.join('tmp/imagenes')
-      Tareas.imaginar_y_producir(params[:url], dir, params[:atributos])
+      if params[:url]
+        Tareas.imaginar_y_producir(params[:url], dir, params[:atributos])
+      else
+        Tareas.producir(dir, params[:atributos])
+      end
       flash.notice = "Carga masiva terminada!!!"
       redirect_to admin_tareas_path
     end

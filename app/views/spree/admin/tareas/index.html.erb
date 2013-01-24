@@ -8,10 +8,18 @@
     <p>
       <%= label_tag 'URL' %>
         <%= text_field_tag 'url', nil, placeholder: 'una URL con imágenes' %>
+        <span class='tip'>En caso de no poner una url, se usarán las imágenes descargadas anteriormente</span>
+    </p>
+    <p>
       <%= label_tag 'Publicar?' %>
         <%= check_box_tag 'atributos[publicar]', true, false %>
       <%= label_tag 'Precio' %>
         <%= text_field_tag 'atributos[precio]', nil, placeholder: 'una fortuna' %>
+    </p>
+    <p>
+      <%= label_tag 'Reemplazar?' %>
+        <%= check_box_tag 'atributos[borrar]', true, false %>
+        <span class='tip'>Los nuevos sobreescriben a los productos existentes si coincide el número</span>
     </p>
     <%= submit_tag 'Carga masiva', confirm: "Probablemente demore mucho..." %>
 </form>
