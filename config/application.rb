@@ -71,7 +71,7 @@ module Nerdos
     # Enable the asset pipeline
     config.assets.enabled = true
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0.1'
+    config.assets.version = '1.0.2'
 
     # Agrego fonts al asset path
     config.assets.paths <<  Rails.root.join("vendor", "assets", "fonts")
